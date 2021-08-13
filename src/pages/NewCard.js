@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const NewCard= ()=>(
         <div>
             <h1>Holiwis</h1>
-            <Link to="/Principal">Volver</Link>
+            <Link to="/principal">Volver</Link>
         </div>
 )
 

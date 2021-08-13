@@ -3,12 +3,16 @@ import Card from './Card'
 
 const CardList = ({datos}) => (
         <div>
-            {datos.map((dato)=>{
-                return <Card 
+            {datos.map((dato)=>(
+                <Card 
+                    key={dato.id}
                     title={dato.title}
-                    description={dato.description}  >
+                    description={dato.description}  
+                    img={dato.img}
+                    >
                     </Card>
-                })}
+                ))
+            }
         </div>
 )
 
