@@ -1,10 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import FlavorForm from '../components/FlavorForm'
 
 
 const NewCard= ()=>(
         <div>
-            <h1>Proximamente..</h1>
+            <FlavorForm value='lime'></FlavorForm>
             <Link to="/principal">Volver</Link>
         </div>
 )

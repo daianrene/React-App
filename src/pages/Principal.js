@@ -2,6 +2,7 @@ import React from 'react'
 import CardList from '../components/CardList'
 import Add from '../components/Add'
 import Clock from '../components/Clock'
+import Toggle from '../components/Toggle'
 
 class Principal extends React.Component{
 
@@ -32,6 +33,7 @@ class Principal extends React.Component{
                 <CardList datos={this.state.datos}></CardList>
                 <Add></Add>
                 <Clock></Clock>
+                <Toggle></Toggle>
             </div>
         )
     }
