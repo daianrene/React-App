@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const NewCard= ()=>(
         <div>
-            <h1>Holiwis</h1>
+            <h1>Proximamente..</h1>
             <Link to="/principal">Volver</Link>
         </div>
 )

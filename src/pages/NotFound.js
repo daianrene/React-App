@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const NotFound = () =>(
 
         <div>
-            <h1>Qe flashaste rey</h1>
+            <h1>Aca no hay nada :(</h1>
             <Link to="/principal">Volver</Link>
         </div>
 )

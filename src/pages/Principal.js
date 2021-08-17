@@ -1,6 +1,7 @@
 import React from 'react'
 import CardList from '../components/CardList'
 import Add from '../components/Add'
+import Clock from '../components/Clock'
 
 class Principal extends React.Component{
 
@@ -8,7 +9,7 @@ class Principal extends React.Component{
         datos: [{
             "id":1,
             "title":"Tecnologias",
-            "description": "Probando la wea cosmica puta la wea espacial po wn sapo re ql deja de wear xq me tai tratando de po wn y esa wea ta weona po la chucha te crei to un wn pero solo qerei wear con la wea y eso tai to aweonao saco wea",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo placeat animi distinctio cum aperiam dolorem quam? Reprehenderit veritatis necessitatibus alias, ab culpa commodi, architecto consectetur magni qui excepturi eum incidunt.",
             "img":"c1.png"
         },{
             "id":2,
@@ -18,16 +19,19 @@ class Principal extends React.Component{
         },{
             "id":3,
             "title":"Desarrollos",
-            "description": "Facilito",
+            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo placeat animi distinctio cum aperiam dolorem quam? Reprehenderit veritatis necessitatibus alias, ab culpa commodi, architecto consectetur magni qui excepturi eum incidunt.",
             "img":"c3.png"
         }]
     }
 
+   
+
     render(){
         return (
             <div>
-                <CardList datos={this.state.datos}></CardList>,
+                <CardList datos={this.state.datos}></CardList>
                 <Add></Add>
+                <Clock></Clock>
             </div>
         )
     }
