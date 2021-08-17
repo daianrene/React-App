@@ -36,9 +36,14 @@ class Principal extends React.Component{
         return (
             <div>
                 <CardList datos={this.state.datos}></CardList>
+
+                <div style={{textAlign:'center'}} >
                 <Add></Add>
+                </div>
+
                 <Clock isToggleOn={this.state.toggle}></Clock>
-                <div style={{display: 'flex', justifyContent: 'center'}} >
+                
+                <div style={{textAlign:'center'}} >
                 <Toggle isToggleOn={this.state.toggle} handle={this.handleToggle}></Toggle>
                 </div>
             </div>

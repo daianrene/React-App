@@ -20,7 +20,7 @@ class Toggle extends React.Component {
   
     render() {
       return (
-        <button onClick={this.handleClick} >
+        <button className={"btn btn-outline-primary"}  onClick={this.handleClick} >
           {this.state.isToggleOn ? 'Resume' : 'Stop'}
         </button>
       );
