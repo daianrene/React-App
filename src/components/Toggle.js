@@ -3,7 +3,9 @@ import React from 'react'
 class Toggle extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {isToggleOn: true};
+      this.state = {
+        isToggleOn:!this.props.isToggleOn
+      }
   
       // Este enlace es necesario para hacer que `this` funcione en el callback
     //   this.handleClick = this.handleClick.bind(this);
@@ -13,12 +15,13 @@ class Toggle extends React.Component {
       this.setState(prevState => ({
         isToggleOn: !prevState.isToggleOn
       }));
+      this.props.handle(this.state.isToggleOn);
     }
   
     render() {
       return (
-        <button onClick={this.handleClick}>
-          {this.state.isToggleOn ? 'ON' : 'OFF'}
+        <button onClick={this.handleClick} >
+          {this.state.isToggleOn ? 'Resume' : 'Stop'}
         </button>
       );
     }

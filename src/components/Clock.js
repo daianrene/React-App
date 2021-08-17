@@ -4,7 +4,7 @@ class Clock extends React.Component{
 
     
     state={
-        date: new Date()
+        date: new Date(),
     }
 
     componentDidMount() {
@@ -19,6 +19,7 @@ class Clock extends React.Component{
     }
 
     tick() {
+        if(this.props.isToggleOn)
         this.setState({
           date: new Date()
         });

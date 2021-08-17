@@ -22,18 +22,25 @@ class Principal extends React.Component{
             "title":"Desarrollos",
             "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo placeat animi distinctio cum aperiam dolorem quam? Reprehenderit veritatis necessitatibus alias, ab culpa commodi, architecto consectetur magni qui excepturi eum incidunt.",
             "img":"c3.png"
-        }]
+        }],
+        toggle:'true'
     }
 
-   
+    handleToggle = (t)=>{
+        this.setState({toggle: t})
+    }
+        
+
 
     render(){
         return (
             <div>
                 <CardList datos={this.state.datos}></CardList>
                 <Add></Add>
-                <Clock></Clock>
-                <Toggle></Toggle>
+                <Clock isToggleOn={this.state.toggle}></Clock>
+                <div style={{display: 'flex', justifyContent: 'center'}} >
+                <Toggle isToggleOn={this.state.toggle} handle={this.handleToggle}></Toggle>
+                </div>
             </div>
         )
     }
