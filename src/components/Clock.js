@@ -27,7 +27,7 @@ class Clock extends React.Component{
 
     render(){
         return(
-        <h2 style={{margin:"20px 0px", textAlign:"center"}}>{this.state.date.toLocaleTimeString()}</h2>    
+        <h2 >{this.state.date.toLocaleTimeString()}</h2>    
         )
     }
 }

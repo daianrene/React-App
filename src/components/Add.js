@@ -1,14 +1,11 @@
 import React from 'react'
-import img from '../images/add.png'
 import {Link} from 'react-router-dom'
 
-const divStyle = {
-  };
 
-const Add = ()=>(
+const Add = (props)=>(
     
-    <Link to="/principal/newcard">
-      <img style={divStyle} src={img} alt="add"/>
+    <Link to={`/principal/${props.url}`}>
+      <img src={`/images/${props.img}`} alt="add"/>
     </Link>
 )
 

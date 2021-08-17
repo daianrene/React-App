@@ -11,17 +11,17 @@ class Principal extends React.Component{
             "id":1,
             "title":"Tecnologias",
             "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo placeat animi distinctio cum aperiam dolorem quam? Reprehenderit veritatis necessitatibus alias, ab culpa commodi, architecto consectetur magni qui excepturi eum incidunt.",
-            "img":"c1.png"
+            "img":"/images/c1.png"
         },{
             "id":2,
             "title":"Herramientas",
             "description": "Y bueno que se yo va",
-            "img":"c2.png"
+            "img":"/images/c2.png"
         },{
             "id":3,
             "title":"Desarrollos",
             "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo placeat animi distinctio cum aperiam dolorem quam? Reprehenderit veritatis necessitatibus alias, ab culpa commodi, architecto consectetur magni qui excepturi eum incidunt.",
-            "img":"c3.png"
+            "img":"/images/c3.png"
         }],
         toggle:'true'
     }
@@ -35,16 +35,17 @@ class Principal extends React.Component{
     render(){
         return (
             <div>
-                <CardList datos={this.state.datos}></CardList>
+                <CardList datos={this.state.datos}/>
 
                 <div style={{textAlign:'center'}} >
-                <Add></Add>
-                </div>
+                    <Add img={"add.png"} url={"newcard"}/>
+                    <br/> <br/>
+                    <Add img={"sun.png"} url={"marvel"}/>
 
-                <Clock isToggleOn={this.state.toggle}></Clock>
-                
-                <div style={{textAlign:'center'}} >
-                <Toggle isToggleOn={this.state.toggle} handle={this.handleToggle}></Toggle>
+                    <br/> <br/>
+                    <Clock isToggleOn={this.state.toggle}/>
+                    
+                    <Toggle isToggleOn={this.state.toggle} handle={this.handleToggle}/>
                 </div>
             </div>
         )
