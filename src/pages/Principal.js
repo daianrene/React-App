@@ -15,7 +15,7 @@ class Principal extends React.Component{
         },{
             "id":2,
             "title":"Herramientas",
-            "description": "Ostias chaval",
+            "description": "Y bueno que se yo va",
             "img":"c2.png"
         },{
             "id":3,
